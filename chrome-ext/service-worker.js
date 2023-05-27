@@ -30,8 +30,6 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
             "https://tonychen2001.github.io/focus-session/?url=" + details.url,
         });
       }
-    } catch (e) {
-      console.log(e);
-    }
+    } catch (e) {}
   });
 });
