@@ -26,7 +26,8 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
         blockedSites.includes(hostNameWithoutSubdomain)
       ) {
         chrome.tabs.update(details.tabId, {
-          url: "localhost:3000?url=" + details.url,
+          url:
+            "https://tonychen2001.github.io/focus-session/?url=" + details.url,
         });
       }
     } catch (e) {
