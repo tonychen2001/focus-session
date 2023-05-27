@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Session",
+  "description": "Block disctracting websites for a specified period of time in order to avoid distraction.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/focus.png"
+  },
+  "icons": {
+    "128": "images/focus.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

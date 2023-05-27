@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" type="text/css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Focus Session</h1>
+    </div>
+    <div id="settings-section" class="popup-section row">
+      <div class="col-6">Number of minutes to block</div>
+      <input id="block-time-input" class="col-2" type="number" value="90" />
+    </div>
+    <div id="start-section" class="popup-section row">
+      <div class="col-8">
+        Time Remaining: <span id="time-remaining">25:00</span> minutes
+      </div>
+      <div class="col-auto">
+        <button id="block-start-stop-button">Start</button>
+      </div>
+    </div>
+    <h2>Blocked Websites</h2>
+    <form id="block-site-form" class="popup-section row">
+      <div class="col-8">
+        <input
+          type="text"
+          id="block-site-input"
+          placeholder="Enter a site to block"
+          autocomplete="off"
+        />
+      </div>
+      <div class="col-auto">
+        <button id="block-site-button">Block</button>
+      </div>
+    </form>
+    <div id="block-list" class="popup-section">
+      <div class="blocked-site row">
+        <div class="col-8">youtube.com</div>
+        <div class="col-auto">
+          <button class="unblock-button">Remove</button>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
