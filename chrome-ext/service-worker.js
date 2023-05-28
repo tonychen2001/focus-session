@@ -25,10 +25,13 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
         blockedSites.includes(hostName) ||
         blockedSites.includes(hostNameWithoutSubdomain)
       ) {
-        chrome.tabs.update(details.tabId, {
-          url:
-            "https://tonychen2001.github.io/focus-session/?url=" + details.url,
-        });
+        chrome.tabs
+          .update(details.tabId, {
+            url:
+              "https://tonychen2001.github.io/focus-session/?url=" +
+              details.url,
+          })
+          .catch(() => {});
       }
     } catch (e) {}
   });
