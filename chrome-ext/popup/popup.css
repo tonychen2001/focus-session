@@ -1,7 +1,7 @@
 body {
   width: 400px;
   height: 400px;
-  background-color: #313131;
+  background-color: #222;
   color: #e7e7e7;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -61,22 +61,57 @@ body {
   align-items: center;
 }
 
+hr {
+  margin: 10px -10px 15px -10px;
+  border: none;
+  border-top: 2px solid #555;
+}
+
+h1 {
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 25px;
+}
+
 h2 {
   margin: 5px 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 input {
   width: 80%;
-  padding: 4px;
+  padding: 5px 0 5px 8px;
   font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #111;
+  color: #e7e7e7;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #555;
+}
+
+button {
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #555;
+  color: #e7e7e7;
 }
 
 .blocked-site {
   margin-bottom: 5px;
-  padding: 4px;
-  background-color: #555;
+  padding: 5px 0 5px 8px;
+  background-color: #333;
+  border-radius: 4px;
+  margin-right: 10px;
+  align-items: center;
 }
 
 #block-site-button {
@@ -87,4 +122,10 @@ input {
   font-weight: 800;
   font-size: 20px;
   color: yellow;
+}
+
+#block-list {
+  height: 275px;
+  overflow-y: scroll;
+  padding: 10px 0;
 }

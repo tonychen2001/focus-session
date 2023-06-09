@@ -6,6 +6,7 @@
     <div id="header">
       <h1>Focus Session</h1>
     </div>
+    <hr />
     <div id="settings-section" class="popup-section row">
       <div class="col-8">Duration of focus session (minutes)</div>
       <input id="block-time-input" class="col-2" type="number" value="90" />
@@ -18,7 +19,7 @@
         <button id="block-start-stop-button">Start</button>
       </div>
     </div>
-    <h2>Blocked Websites</h2>
+    <hr />
     <form id="block-site-form" class="popup-section row">
       <div class="col-8">
         <input
@@ -32,14 +33,8 @@
         <button id="block-site-button">Block</button>
       </div>
     </form>
-    <div id="block-list" class="popup-section">
-      <div class="blocked-site row">
-        <div class="col-8">youtube.com</div>
-        <div class="col-auto">
-          <button class="unblock-button">Remove</button>
-        </div>
-      </div>
-    </div>
+    <h2>Blocked Websites</h2>
+    <div id="block-list" class="popup-section"></div>
     <script src="popup.js"></script>
   </body>
 </html>
