@@ -4,6 +4,10 @@ body {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 #bypass-prompt {
   user-select: none;
 }
@@ -15,4 +19,27 @@ body {
   margin: 1rem;
   padding: 0.5rem;
   width: 20rem;
+}
+
+#navigate-section {
+  margin-top: 50px;
+}
+
+#navigate-section h2 {
+  font-size: 1.3rem;
+}
+
+#navigate-btn {
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#navigate-url {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
 }
