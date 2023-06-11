@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Focus Session",
-  "description": "Block disctracting websites for a specified period of time in order to avoid distraction. Focus Session prevents blocked websites from loading, eliminating any possibility of experiencing the dopamine rush that comes from witnessing the content loading.",
+  "description": "Block distracting websites for a set period of time to avoid distraction. Blocked websites don't load to prevent dopamine hits.",
   "version": "1.0",
   "action": {
     "default_popup": "popup/popup.html",
@@ -17,8 +17,5 @@
     "storage",
     "tabs",
     "webNavigation"
-  ],
-  "host_permissions": [
-    "<all_urls>"
   ]
 }
